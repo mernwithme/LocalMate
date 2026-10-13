@@ -42,7 +42,14 @@ const allowedOrigins = process.env.CLIENT_URL
   : ['http://localhost:5173', 'https://localmate.in', 'https://www.localmate.in'];
 
 const corsOriginHandler = (origin, callback) => {
-  if (!origin || allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
+  if (
+    !origin ||
+    allowedOrigins.includes(origin) ||
+    allowedOrigins.includes('*') ||
+    origin.endsWith('.vercel.app') ||
+    origin.startsWith('http://localhost:') ||
+    origin.startsWith('http://127.0.0.1:')
+  ) {
     return callback(null, true);
   }
   return callback(new Error('Blocked by CORS policy: Origin not allowed'));
