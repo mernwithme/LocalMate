@@ -1,15 +1,13 @@
 import axios from 'axios';
 
 // Determine API base URL
-// In production on Vercel: uses VITE_API_URL or VITE_BACKEND_URL/api
+// In production on Vercel: uses VITE_API_URL or VITE_BACKEND_URL (ensures /api suffix)
 // In local dev with Vite proxy: defaults to '/api'
 const getBaseURL = () => {
-  if (import.meta.env.VITE_API_URL) {
-    return import.meta.env.VITE_API_URL;
-  }
-  if (import.meta.env.VITE_BACKEND_URL) {
-    const cleanUrl = import.meta.env.VITE_BACKEND_URL.replace(/\/+$/, '');
-    return `${cleanUrl}/api`;
+  const envUrl = import.meta.env.VITE_API_URL || import.meta.env.VITE_BACKEND_URL;
+  if (envUrl && typeof envUrl === 'string' && envUrl.trim() !== '') {
+    const cleanUrl = envUrl.trim().replace(/\/+$/, '');
+    return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
   }
   return '/api';
 };

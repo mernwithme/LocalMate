@@ -100,7 +100,9 @@ const authLimiter = rateLimit({
   legacyHeaders: false,
 });
 app.use('/api/auth/login', authLimiter);
+app.use('/auth/login', authLimiter);
 app.use('/api/auth/register', authLimiter);
+app.use('/auth/register', authLimiter);
 
 app.use('/uploads', express.static(uploadsDir));
 
@@ -122,15 +124,33 @@ app.get('/api/health', (req, res) => {
     env: process.env.NODE_ENV || 'development',
   });
 });
+app.get('/health', (req, res) => {
+  res.json({
+    status: 'OK',
+    service: 'LocalMate Coimbatore API',
+    location: 'Coimbatore, Tamil Nadu',
+    timestamp: new Date().toISOString(),
+    env: process.env.NODE_ENV || 'development',
+  });
+});
 
+// Mount routes on both /api/* and /* for maximum client compatibility
 app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
 app.use('/api/services', serviceRoutes);
+app.use('/services', serviceRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/categories', categoryRoutes);
 app.use('/api/bookings', bookingRoutes);
+app.use('/bookings', bookingRoutes);
 app.use('/api/reviews', reviewRoutes);
+app.use('/reviews', reviewRoutes);
 app.use('/api/messages', messageRoutes);
+app.use('/messages', messageRoutes);
 app.use('/api/notifications', notificationRoutes);
+app.use('/notifications', notificationRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/admin', adminRoutes);
 
 io.on('connection', (socket) => {
   console.log(`[Socket.io] Client connected: ${socket.id}`);
