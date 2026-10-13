@@ -35,6 +35,7 @@ if (!fs.existsSync(uploadsDir)) {
 }
 
 const app = express();
+app.set('trust proxy', 1);
 const server = http.createServer(app);
 
 const allowedOrigins = process.env.CLIENT_URL
@@ -89,6 +90,7 @@ const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 300,
   message: { success: false, message: 'Too many requests from this IP, please try again after 15 minutes' },
+  validate: { xForwardedForHeader: false },
 });
 app.use('/api/', apiLimiter);
 
@@ -98,6 +100,7 @@ const authLimiter = rateLimit({
   message: { success: false, message: 'Too many authentication attempts from this IP, please try again after 15 minutes' },
   standardHeaders: true,
   legacyHeaders: false,
+  validate: { xForwardedForHeader: false },
 });
 app.use('/api/auth/login', authLimiter);
 app.use('/auth/login', authLimiter);
