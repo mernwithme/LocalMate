@@ -97,6 +97,15 @@ app.use('/api/auth/register', authLimiter);
 
 app.use('/uploads', express.static(uploadsDir));
 
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'LocalMate Coimbatore API is active and running',
+    version: '1.0.0',
+    health: '/api/health',
+  });
+});
+
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
