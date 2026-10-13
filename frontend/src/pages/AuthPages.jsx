@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Wrench, Mail, Lock, User, Briefcase, MapPin } from 'lucide-react';
+import { Wrench, Mail, Lock, User, Briefcase, MapPin, ShieldCheck, Key } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { CBE_AREAS } from '../data/mockServices';
 
@@ -183,13 +183,22 @@ export function RegisterPage() {
   const { register } = useAuth();
   const navigate = useNavigate();
 
-  const [role, setRole] = useState('customer');
+  const [role, setRole] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('role') === 'admin') return 'admin';
+      if (params.get('role') === 'provider') return 'provider';
+    }
+    return 'customer';
+  });
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [phone, setPhone] = useState('');
   const [area, setArea] = useState('Peelamedu');
+  const [adminSecret, setAdminSecret] = useState('');
   const [agreeTerms, setAgreeTerms] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -197,7 +206,8 @@ export function RegisterPage() {
       toast.error('Please agree to the Terms and Conditions to create your account.');
       return;
     }
-    const success = await register({
+    setLoading(true);
+    const registeredUser = await register({
       name,
       email,
       password,
@@ -205,11 +215,17 @@ export function RegisterPage() {
       phone,
       area,
       city: 'Coimbatore',
+      adminSecret: role === 'admin' ? (adminSecret.trim() || 'localmate_admin') : undefined,
     });
-    if (success) {
-      navigate('/');
-    } else {
-      toast.error('Please fill all required fields.');
+    setLoading(false);
+    if (registeredUser) {
+      if (role === 'admin' || registeredUser.role === 'admin') {
+        navigate('/dashboard/admin');
+      } else if (role === 'provider' || registeredUser.role === 'provider') {
+        navigate('/dashboard/provider');
+      } else {
+        navigate('/');
+      }
     }
   };
 
@@ -221,40 +237,72 @@ export function RegisterPage() {
             Join Local<span className="text-blue-600 dark:text-blue-400">Mate</span>
           </h2>
           <p className="text-xs text-slate-500">
-            Select whether you want to book or offer services in Coimbatore
+            Select your account type to access Coimbatore's local service network
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-3 gap-2">
           <button
             type="button"
             onClick={() => setRole('customer')}
-            className={`p-3 rounded-2xl border text-center transition-all ${
+            className={`p-2.5 rounded-2xl border text-center transition-all ${
               role === 'customer'
-                ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/60 text-blue-600 shadow-sm'
+                ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/60 text-blue-600 shadow-sm ring-1 ring-blue-500'
                 : 'border-slate-200 dark:border-slate-800 text-slate-600 hover:border-slate-300'
             }`}
           >
             <User className="w-4 h-4 mx-auto mb-1" />
             <span className="font-bold text-xs block">Customer</span>
-            <span className="text-[10px] text-slate-400">Need local help</span>
+            <span className="text-[10px] text-slate-400">Need help</span>
           </button>
           <button
             type="button"
             onClick={() => setRole('provider')}
-            className={`p-3 rounded-2xl border text-center transition-all ${
+            className={`p-2.5 rounded-2xl border text-center transition-all ${
               role === 'provider'
-                ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/60 text-blue-600 shadow-sm'
+                ? 'border-blue-600 bg-blue-50 dark:bg-blue-950/60 text-blue-600 shadow-sm ring-1 ring-blue-500'
                 : 'border-slate-200 dark:border-slate-800 text-slate-600 hover:border-slate-300'
             }`}
           >
             <Briefcase className="w-4 h-4 mx-auto mb-1" />
-            <span className="font-bold text-xs block">Service Provider</span>
-            <span className="text-[10px] text-slate-400">Offer services/rentals</span>
+            <span className="font-bold text-xs block">Provider</span>
+            <span className="text-[10px] text-slate-400">Offer jobs</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setRole('admin')}
+            className={`p-2.5 rounded-2xl border text-center transition-all ${
+              role === 'admin'
+                ? 'border-purple-600 bg-purple-50 dark:bg-purple-950/60 text-purple-600 shadow-sm ring-1 ring-purple-500'
+                : 'border-slate-200 dark:border-slate-800 text-slate-600 hover:border-slate-300'
+            }`}
+          >
+            <ShieldCheck className="w-4 h-4 mx-auto mb-1 text-purple-600 dark:text-purple-400" />
+            <span className="font-bold text-xs block">Admin</span>
+            <span className="text-[10px] text-slate-400">Management</span>
           </button>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-3.5">
+          {role === 'admin' && (
+            <div className="p-3.5 rounded-2xl bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800/60 space-y-1.5 transition-all">
+              <div className="flex items-center gap-1.5 text-purple-900 dark:text-purple-300">
+                <Key className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
+                <span className="text-xs font-bold">Admin Security Passcode</span>
+              </div>
+              <input
+                type="password"
+                placeholder="Enter admin passcode (default: localmate_admin)"
+                value={adminSecret}
+                onChange={(e) => setAdminSecret(e.target.value)}
+                className="w-full px-3.5 py-2 rounded-xl border border-purple-300 dark:border-purple-700 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-purple-500"
+              />
+              <p className="text-[10px] text-purple-700 dark:text-purple-400">
+                Security key for administrative privileges. Default: <span className="font-mono font-bold">localmate_admin</span>
+              </p>
+            </div>
+          )}
+
           <div>
             <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
               Your Name
@@ -262,7 +310,7 @@ export function RegisterPage() {
             <input
               type="text"
               required
-              placeholder="e.g. Suresh Kumar"
+              placeholder={role === 'admin' ? 'e.g. Administrator Name' : 'e.g. Suresh Kumar'}
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="w-full px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500"
@@ -276,7 +324,7 @@ export function RegisterPage() {
             <input
               type="email"
               required
-              placeholder="you@example.com"
+              placeholder={role === 'admin' ? 'admin@localmate.com' : 'you@example.com'}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500"
@@ -351,9 +399,16 @@ export function RegisterPage() {
 
           <button
             type="submit"
-            className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-md shadow-blue-500/25 transition-all mt-2"
+            disabled={loading}
+            className={`w-full py-2.5 rounded-xl text-white font-bold text-xs shadow-md transition-all mt-2 ${
+              role === 'admin'
+                ? 'bg-purple-600 hover:bg-purple-700 shadow-purple-500/25'
+                : 'bg-blue-600 hover:bg-blue-700 shadow-blue-500/25'
+            }`}
           >
-            Create {role === 'provider' ? 'Provider' : 'Customer'} Account
+            {loading
+              ? 'Creating account...'
+              : `Create ${role === 'admin' ? 'Administrator' : role === 'provider' ? 'Provider' : 'Customer'} Account`}
           </button>
         </form>
 

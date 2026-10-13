@@ -60,6 +60,8 @@ export default function App() {
                   <Route path="/login" element={<LoginPage />} />
                   <Route path="/register" element={<RegisterPage />} />
                   <Route path="/become-provider" element={<RegisterPage />} />
+                  <Route path="/admin" element={<Navigate to="/dashboard/admin" replace />} />
+                  <Route path="/admin/register" element={<Navigate to="/register?role=admin" replace />} />
 
                   <Route
                     path="/dashboard/customer"

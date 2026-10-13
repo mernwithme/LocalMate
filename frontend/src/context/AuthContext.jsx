@@ -171,7 +171,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem('localmate_user', JSON.stringify(data.user));
         setUser(data.user);
         toast.success('Account registered successfully!');
-        return true;
+        return data.user;
       }
     } catch (error) {
       if (error.response?.data?.message) {

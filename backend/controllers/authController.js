@@ -3,7 +3,7 @@ import { generateToken } from '../middleware/authMiddleware.js';
 
 export const registerUser = async (req, res, next) => {
   try {
-    const { name, email, password, role, phone, skills, experienceYears, bio, hourlyRate, city } = req.body;
+    const { name, email, password, role, phone, adminSecret, skills, experienceYears, bio, hourlyRate, city } = req.body;
 
     if (!name || typeof name !== 'string' || !name.trim()) {
       return res.status(400).json({ success: false, message: 'Please provide your name.' });
@@ -18,7 +18,16 @@ export const registerUser = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'Password must be at least 6 characters long.' });
     }
 
-    const safeRole = role === 'provider' ? 'provider' : 'customer';
+    let safeRole = 'customer';
+    if (role === 'provider') {
+      safeRole = 'provider';
+    } else if (role === 'admin') {
+      const serverAdminKey = process.env.ADMIN_KEY || 'localmate_admin';
+      if (adminSecret && adminSecret.trim() !== serverAdminKey.trim()) {
+        return res.status(400).json({ success: false, message: 'Invalid Admin Security Key. Please provide the correct admin key.' });
+      }
+      safeRole = 'admin';
+    }
 
     const cleanEmail = email.trim().toLowerCase();
     const userExists = await User.findOne({ email: cleanEmail });
