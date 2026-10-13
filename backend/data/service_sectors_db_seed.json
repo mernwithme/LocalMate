@@ -1,0 +1,542 @@
+[
+  {
+    "category": {
+      "name": "Emergency Utilities",
+      "slug": "emergency-utilities",
+      "description": "Services required immediately during emergencies.",
+      "icon": "AlertTriangle",
+      "whyCustomersUse": "When something breaks down unexpectedly and needs an instant fix to prevent damage or disruption to daily life.",
+      "popularKeywords": ["emergency plumber", "short circuit", "water leak", "24/7 electrician", "power cut"]
+    },
+    "services": [
+      {"title": "Emergency Electrician", "description": "24/7 electrician for urgent power cuts and short circuits."},
+      {"title": "Emergency Plumber", "description": "Immediate help for broken pipes and heavy water leaks."},
+      {"title": "Water Leakage Repair", "description": "Fixing leaking roofs, walls, and taps instantly."},
+      {"title": "Pipe Burst Repair", "description": "Urgent repair for burst plumbing pipes in home or office."},
+      {"title": "Main Board Repair", "description": "Fixing main electrical distribution boards and fuses."},
+      {"title": "Short Circuit Repair", "description": "Identifying and resolving electrical short circuits safely."},
+      {"title": "Motor Repair", "description": "Emergency repair for water pump motors and borewells."},
+      {"title": "Water Tank Overflow Fix", "description": "Repairing faulty float valves and tank sensors."},
+      {"title": "Inverter Repair", "description": "Urgent repairs for home inverters and battery backups."},
+      {"title": "Generator Repair", "description": "Fixing diesel or petrol generators for emergency power."},
+      {"title": "Borewell Motor Repair", "description": "Retrieving or fixing faulty submersible borewell motors."},
+      {"title": "Drain Block Removal", "description": "Clearing severely blocked bathroom or kitchen drains."},
+      {"title": "Sewage Line Repair", "description": "Fixing broken or overflowing external sewage lines."},
+      {"title": "Emergency Water Supply", "description": "Urgent private water tanker delivery."},
+      {"title": "Gas Leakage Inspection", "description": "Safe inspection and sealing of LPG gas leaks."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Move-in & Home Setup",
+      "slug": "move-in-home-setup",
+      "description": "Help customers who are shifting into a new home.",
+      "icon": "Home",
+      "whyCustomersUse": "When moving to a new rented or bought house and needing multiple small installations to make it liveable.",
+      "popularKeywords": ["tv wall mount", "furniture assembly", "ac installation", "new house setup"]
+    },
+    "services": [
+      {"title": "Furniture Assembly", "description": "Assembling beds, wardrobes, and tables from IKEA, Pepperfry, etc."},
+      {"title": "Carpenter", "description": "General carpentry work for shelves, doors, and minor fixes."},
+      {"title": "Curtain Installation", "description": "Drilling and fitting curtain rods and blinds."},
+      {"title": "Modular Kitchen Installation", "description": "Fitting kitchen cabinets, chimneys, and hobs."},
+      {"title": "TV Wall Mount", "description": "Safe drilling and mounting of LED/Smart TVs on walls."},
+      {"title": "Washing Machine Installation", "description": "Connecting water inlets, outlets, and power for washing machines."},
+      {"title": "Refrigerator Setup", "description": "Unpacking, leveling, and starting double-door or side-by-side fridges."},
+      {"title": "RO Installation", "description": "Mounting and plumbing setup for water purifiers."},
+      {"title": "Geyser Installation", "description": "Safe mounting and electrical/plumbing connection for water heaters."},
+      {"title": "AC Installation", "description": "Mounting indoor/outdoor units, copper piping, and gas check for ACs."},
+      {"title": "Smart Door Lock Installation", "description": "Fitting biometric and passcode smart locks on main doors."},
+      {"title": "WiFi Router Setup", "description": "Configuring home networks, routers, and mesh WiFi systems."},
+      {"title": "CCTV Installation", "description": "Setting up home security cameras and DVR/NVR systems."},
+      {"title": "Home Cleaning", "description": "Pre move-in deep cleaning of empty houses."},
+      {"title": "Interior Setup", "description": "Helping unpack and arrange furniture and decor."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Cleaning & Hygiene",
+      "slug": "cleaning-hygiene",
+      "description": "Professional deep cleaning and sanitation services.",
+      "icon": "Sparkles",
+      "whyCustomersUse": "Before festivals (Diwali, Pongal), after a party, or periodic deep cleaning that daily maids cannot handle.",
+      "popularKeywords": ["deep cleaning", "sofa cleaning", "bathroom cleaning", "water tank cleaning"]
+    },
+    "services": [
+      {"title": "Deep Home Cleaning", "description": "Intensive top-to-bottom cleaning of the entire house."},
+      {"title": "Bathroom Cleaning", "description": "Acid wash and hard water stain removal for bathrooms."},
+      {"title": "Kitchen Cleaning", "description": "Degreasing chimneys, tiles, slabs, and cabinets."},
+      {"title": "Sofa Cleaning", "description": "Shampooing and vacuuming fabric or leather sofas."},
+      {"title": "Carpet Cleaning", "description": "Deep shampooing and dust extraction for large carpets."},
+      {"title": "Mattress Cleaning", "description": "Removing dust mites, stains, and odors from beds."},
+      {"title": "Water Tank Cleaning", "description": "Mechanized cleaning and sanitization of overhead water tanks."},
+      {"title": "Floor Polishing", "description": "Marble and granite floor buffing and polishing."},
+      {"title": "Glass Cleaning", "description": "Wiping and polishing high-rise or large window glasses."},
+      {"title": "Office Cleaning", "description": "Deep cleaning for commercial spaces and cabins."},
+      {"title": "Move-out Cleaning", "description": "Cleaning the house before handing it back to the landlord."},
+      {"title": "Post Construction Cleaning", "description": "Removing cement, paint drops, and dust from new buildings."},
+      {"title": "Terrace Cleaning", "description": "Power washing algae and dirt from open terraces."},
+      {"title": "Drain Cleaning", "description": "Removing sludge and blockages from floor drains."},
+      {"title": "Septic Tank Cleaning", "description": "Vacuum truck services for clearing septic tanks."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Pest Control",
+      "slug": "pest-control",
+      "description": "Extermination and control of household pests.",
+      "icon": "Bug",
+      "whyCustomersUse": "To protect family health and property from infestations, often needed in monsoon or older buildings.",
+      "popularKeywords": ["termite treatment", "bed bug control", "cockroach killer", "mosquito net"]
+    },
+    "services": [
+      {"title": "Cockroach Control", "description": "Gel and spray treatments to eliminate cockroach infestations."},
+      {"title": "Termite Treatment", "description": "Drill-fill-seal anti-termite treatment for wood and walls."},
+      {"title": "Bed Bug Control", "description": "Intensive chemical spray to kill bed bugs and eggs."},
+      {"title": "Mosquito Control", "description": "Fogging and spray treatments for mosquito breeding areas."},
+      {"title": "Rat Control", "description": "Traps, glue boards, and baiting to remove rodents."},
+      {"title": "Ant Control", "description": "Treatment targeting red and black ant colonies."},
+      {"title": "Bee Removal", "description": "Safe removal of beehives from balconies or trees."},
+      {"title": "Snake Rescue", "description": "Professional snake catchers for safe relocation."},
+      {"title": "Bird Net Installation", "description": "Installing anti-bird nets on balconies and windows."},
+      {"title": "General Pest Control", "description": "Preventive spray covering multiple common household pests."},
+      {"title": "Wood Borer Treatment", "description": "Specialized treatment for powder-falling wood pests."},
+      {"title": "Lizard Control", "description": "Repellents and sprays to keep wall lizards away."},
+      {"title": "Flea & Tick Control", "description": "Treating homes with pets for flea infestations."},
+      {"title": "Garden Pest Control", "description": "Protecting plants from aphids, mealybugs, and caterpillars."},
+      {"title": "Warehouse Fumigation", "description": "Industrial pest control for storage spaces."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Vehicle Assistance",
+      "slug": "vehicle-assistance",
+      "description": "On-demand repairs and maintenance for cars and bikes.",
+      "icon": "Car",
+      "whyCustomersUse": "When stranded on the road, needing a jumpstart, or avoiding the hassle of dropping vehicles at a service center.",
+      "popularKeywords": ["car mechanic near me", "puncture repair", "jump start", "car wash"]
+    },
+    "services": [
+      {"title": "Bike Mechanic", "description": "Doorstep repair and servicing for motorcycles and scooters."},
+      {"title": "Car Mechanic", "description": "General repairs and troubleshooting for all car brands."},
+      {"title": "Doorstep Mechanic", "description": "Mechanics who travel to your location for quick fixes."},
+      {"title": "Battery Jump Start", "description": "Reviving dead car or bike batteries instantly."},
+      {"title": "Puncture Repair", "description": "Fixing tubeless and tubed tire punctures on the spot."},
+      {"title": "Tyre Replacement", "description": "Delivering and installing new tires at your location."},
+      {"title": "Oil Change", "description": "Engine oil and filter replacement at home."},
+      {"title": "Car Wash", "description": "Exterior washing and interior vacuuming at your doorstep."},
+      {"title": "Bike Wash", "description": "Pressure wash and chain lubrication for two-wheelers."},
+      {"title": "Car Detailing", "description": "Deep interior cleaning, rubbing, and waxing."},
+      {"title": "Vehicle Towing", "description": "Flatbed or winch towing for broken-down vehicles."},
+      {"title": "Engine Diagnostics", "description": "OBD scanning to identify check-engine light issues."},
+      {"title": "Brake Repair", "description": "Replacing brake pads and bleeding brake fluid."},
+      {"title": "Emergency Fuel Delivery", "description": "Delivering petrol or diesel when stranded on the road."},
+      {"title": "Vehicle Inspection", "description": "Pre-purchase inspection of second-hand cars."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Rental Services",
+      "slug": "rental-services",
+      "description": "Short-term rentals for vehicles, electronics, and equipment.",
+      "icon": "Key",
+      "whyCustomersUse": "For weekend trips, temporary work needs, or hosting a party without buying expensive equipment.",
+      "popularKeywords": ["bike rental", "self drive car", "laptop on rent", "dslr rental"]
+    },
+    "services": [
+      {"title": "Bike Rental", "description": "Renting motorcycles for daily commutes or road trips."},
+      {"title": "Scooter Rental", "description": "Gearless scooters for easy city travel."},
+      {"title": "Bicycle Rental", "description": "Geared and non-geared cycles for fitness or leisure."},
+      {"title": "Self Drive Car", "description": "Hatchbacks, sedans, and SUVs without a driver."},
+      {"title": "Luxury Car Rental", "description": "Premium cars for weddings and VIP events."},
+      {"title": "Mini Truck Rental", "description": "Tata Ace or similar for shifting small loads."},
+      {"title": "Camera Rental", "description": "Mirrorless and DSLR cameras with lenses."},
+      {"title": "Laptop Rental", "description": "Windows and Mac laptops for short-term projects."},
+      {"title": "Projector Rental", "description": "Projectors and screens for movie nights or presentations."},
+      {"title": "Generator Rental", "description": "Portable power backups for events and outages."},
+      {"title": "Tent Rental", "description": "Camping tents and sleeping bags for outdoor trips."},
+      {"title": "Party Speaker Rental", "description": "Loud Bluetooth speakers and mics for house parties."},
+      {"title": "Helmet Rental", "description": "Safety helmets for riders and pillions."},
+      {"title": "Camping Equipment Rental", "description": "Stoves, trekking poles, and torches."},
+      {"title": "Gaming Console Rental", "description": "PS5 or Xbox consoles rented by the day."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Learning & Coaching",
+      "slug": "learning-coaching",
+      "description": "Academic tutoring, skill development, and hobby classes.",
+      "icon": "BookOpen",
+      "whyCustomersUse": "Parents looking for tutors for kids, or adults wanting to upskill or learn a new hobby.",
+      "popularKeywords": ["home tutor", "spoken english", "music teacher", "neet coaching"]
+    },
+    "services": [
+      {"title": "Home Tutor", "description": "Private tutoring for school subjects at the student's home."},
+      {"title": "Online Tutor", "description": "Virtual classes for mathematics, science, and languages."},
+      {"title": "Coding Mentor", "description": "1-on-1 guidance for programming languages and logic."},
+      {"title": "Spoken English", "description": "Classes to improve English fluency and confidence."},
+      {"title": "NEET Coaching", "description": "Preparation for medical entrance exams."},
+      {"title": "JEE Coaching", "description": "Preparation for engineering entrance exams."},
+      {"title": "UPSC Coaching", "description": "Guidance and strategy for civil services exams."},
+      {"title": "Music Teacher", "description": "Vocal training for Carnatic, Hindustani, or Western music."},
+      {"title": "Dance Teacher", "description": "Classes for Bharatanatyam, Kathak, or Bollywood styles."},
+      {"title": "Guitar Classes", "description": "Learning acoustic or electric guitar basics."},
+      {"title": "Keyboard Classes", "description": "Piano and synthesizer lessons for beginners."},
+      {"title": "Drawing Classes", "description": "Art, sketching, and watercolor painting for kids and adults."},
+      {"title": "Chess Coaching", "description": "Strategic training to improve chess ratings."},
+      {"title": "Personality Development", "description": "Coaching for soft skills and public speaking."},
+      {"title": "Interview Preparation", "description": "Mock interviews and resume building for job seekers."}
+    ]
+  },
+  {
+    "category": {
+      "name": "IT & Freelance Services",
+      "slug": "it-freelance-services",
+      "description": "Tech, design, and digital marketing for small businesses.",
+      "icon": "Laptop",
+      "whyCustomersUse": "Small business owners or individuals needing digital presence without hiring full-time staff.",
+      "popularKeywords": ["website developer", "logo design", "video editing", "seo expert"]
+    },
+    "services": [
+      {"title": "Website Development", "description": "Creating business websites and landing pages."},
+      {"title": "Mobile App Development", "description": "Building Android and iOS applications."},
+      {"title": "MERN Developer", "description": "Full-stack web development using MongoDB, Express, React, Node."},
+      {"title": "Java Developer", "description": "Backend development and enterprise software solutions."},
+      {"title": "Python Developer", "description": "Scripting, data analysis, and backend development."},
+      {"title": "UI/UX Design", "description": "Designing user interfaces for apps and websites in Figma."},
+      {"title": "Logo Design", "description": "Creating unique brand identities and logos."},
+      {"title": "Graphic Design", "description": "Brochures, flyers, and social media post design."},
+      {"title": "Video Editing", "description": "Editing YouTube videos, reels, and wedding films."},
+      {"title": "Photo Editing", "description": "Retouching, color correction, and background removal."},
+      {"title": "SEO Services", "description": "Improving website ranking on Google Search."},
+      {"title": "Digital Marketing", "description": "Running Google Ads and Facebook Ads campaigns."},
+      {"title": "Social Media Management", "description": "Handling Instagram and Facebook accounts for brands."},
+      {"title": "Resume Design", "description": "Creating professional, ATS-friendly resumes."},
+      {"title": "Portfolio Website", "description": "Personal websites for creatives and professionals."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Events & Celebrations",
+      "slug": "events-celebrations",
+      "description": "Everything needed to host a perfect party, wedding, or event.",
+      "icon": "PartyPopper",
+      "whyCustomersUse": "Organizing birthdays, weddings, or corporate events, requiring reliable vendors and artists.",
+      "popularKeywords": ["wedding photographer", "balloon decoration", "caterers", "makeup artist"]
+    },
+    "services": [
+      {"title": "Wedding Photographer", "description": "Candid and traditional photography for marriages."},
+      {"title": "Birthday Photographer", "description": "Capturing kids' birthdays and intimate family events."},
+      {"title": "Videographer", "description": "Cinematic videos and traditional event coverage."},
+      {"title": "Drone Photography", "description": "Aerial shots for large outdoor events and real estate."},
+      {"title": "Catering", "description": "Vegetarian and non-vegetarian food catering for crowds."},
+      {"title": "Decoration", "description": "Theme-based decor for stages and event halls."},
+      {"title": "Balloon Decoration", "description": "Creative balloon arches and setups for birthdays."},
+      {"title": "Flower Decoration", "description": "Traditional floral garlands and mandap decorations."},
+      {"title": "DJ Services", "description": "Professional DJ with console for sangeets and parties."},
+      {"title": "Stage Setup", "description": "Building platforms, backdrops, and trussing."},
+      {"title": "Lighting", "description": "Ambient, dynamic, and spot lighting for venues."},
+      {"title": "Sound System", "description": "Renting mics, mixers, and PA systems."},
+      {"title": "Makeup Artist", "description": "Bridal and party makeup styling."},
+      {"title": "Mehendi Artist", "description": "Intricate henna designs for brides and guests."},
+      {"title": "Event Planner", "description": "End-to-end coordination and management of events."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Health & Personal Care",
+      "slug": "health-personal-care",
+      "description": "Wellness, fitness, and medical support at home.",
+      "icon": "Heart",
+      "whyCustomersUse": "For convenience, privacy, or when dealing with elderly family members who cannot travel to a clinic.",
+      "popularKeywords": ["physiotherapist at home", "yoga trainer", "home nurse", "doctor home visit"]
+    },
+    "services": [
+      {"title": "Personal Trainer", "description": "1-on-1 fitness coaching at your home or local gym."},
+      {"title": "Yoga Trainer", "description": "Guided yoga sessions for flexibility and mental peace."},
+      {"title": "Dietitian", "description": "Customized meal plans for weight loss or medical conditions."},
+      {"title": "Nutritionist", "description": "Expert advice on supplements and holistic diets."},
+      {"title": "Physiotherapist", "description": "Rehabilitation and pain relief exercises at home."},
+      {"title": "Home Nurse", "description": "Qualified nurses for post-surgery or chronic care."},
+      {"title": "Elder Care", "description": "Compassionate assistance for senior citizens' daily needs."},
+      {"title": "Patient Care", "description": "Attendants to help bedridden or recovering patients."},
+      {"title": "Massage Therapist", "description": "Relaxing and therapeutic body massages at home."},
+      {"title": "Meditation Coach", "description": "Guided mindfulness and stress reduction sessions."},
+      {"title": "Doctor Home Visit", "description": "General physicians consulting at the patient's house."},
+      {"title": "Health Checkup", "description": "Home collection of blood and urine samples for lab tests."},
+      {"title": "Speech Therapist", "description": "Helping children or stroke victims improve speech."},
+      {"title": "Psychologist", "description": "In-person or virtual counseling for mental health."},
+      {"title": "Acupuncture", "description": "Traditional needle therapy for pain management."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Household Support",
+      "slug": "household-support",
+      "description": "Daily chores, child care, and domestic help.",
+      "icon": "Users",
+      "whyCustomersUse": "Working professionals seeking reliable daily or part-time help to manage their households.",
+      "popularKeywords": ["house maid", "cook", "babysitter", "dog walker"]
+    },
+    "services": [
+      {"title": "House Maid", "description": "Daily sweeping, mopping, and utensil washing."},
+      {"title": "Cook", "description": "Preparing daily breakfast, lunch, or dinner."},
+      {"title": "Babysitter", "description": "Part-time supervision and care for infants and toddlers."},
+      {"title": "Nanny", "description": "Full-time care, feeding, and engagement for children."},
+      {"title": "Elder Care", "description": "Assisting seniors with meals, walking, and medicines."},
+      {"title": "Laundry Service", "description": "Washing, folding, and delivering daily clothes."},
+      {"title": "Ironing", "description": "Pressing clothes neatly, usually done on a per-piece basis."},
+      {"title": "Home Organizer", "description": "Decluttering and organizing wardrobes and kitchens."},
+      {"title": "Pet Care", "description": "Feeding and checking in on pets when owners are away."},
+      {"title": "Dog Walking", "description": "Taking dogs out for their daily exercise and bathroom breaks."},
+      {"title": "Driver on Hire", "description": "Temporary drivers for your personal car."},
+      {"title": "Errand Runner", "description": "Someone to drop cheques, buy groceries, or fetch medicines."},
+      {"title": "Gardener (Mali)", "description": "Daily or weekly watering and basic plant upkeep."},
+      {"title": "Security Guard", "description": "Hiring guards for residential gates or events."},
+      {"title": "House Manager", "description": "Supervising other staff and managing household inventory."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Relocation & Logistics",
+      "slug": "relocation-logistics",
+      "description": "Moving goods, shifting houses, and courier services.",
+      "icon": "Truck",
+      "whyCustomersUse": "Safely packing and transporting belongings when changing residences or sending large items across town.",
+      "popularKeywords": ["packers and movers", "house shifting", "mini truck", "courier pickup"]
+    },
+    "services": [
+      {"title": "Packers & Movers", "description": "End-to-end packing, loading, moving, and unloading."},
+      {"title": "House Shifting", "description": "Relocating household items to a new address."},
+      {"title": "Office Relocation", "description": "Moving IT equipment, desks, and files securely."},
+      {"title": "Furniture Moving", "description": "Transporting heavy items like beds and wardrobes safely."},
+      {"title": "Bike Transport", "description": "Packing and transporting two-wheelers between cities."},
+      {"title": "Car Transport", "description": "Car carrier services for interstate vehicle moving."},
+      {"title": "Loading", "description": "Laborers to safely carry heavy items onto trucks."},
+      {"title": "Unloading", "description": "Laborers to bring items down from trucks into the house."},
+      {"title": "Warehouse Storage", "description": "Renting space to store household goods temporarily."},
+      {"title": "Courier Pickup", "description": "Doorstep pickup for documents and small parcels."},
+      {"title": "Parcel Delivery", "description": "Local intra-city delivery of goods on the same day."},
+      {"title": "Heavy Machinery Moving", "description": "Shifting industrial equipment using cranes or specialized trucks."},
+      {"title": "Fine Art Transport", "description": "Climate-controlled moving for paintings and sculptures."},
+      {"title": "Junk Removal", "description": "Taking away old furniture and scrap during a move."},
+      {"title": "Intercity Moving", "description": "Long-distance relocation across state borders."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Outdoor & Garden",
+      "slug": "outdoor-garden",
+      "description": "Landscaping, plant care, and exterior home maintenance.",
+      "icon": "Leaf",
+      "whyCustomersUse": "To maintain aesthetic gardens, grow organic veggies on terraces, or manage large outdoor spaces.",
+      "popularKeywords": ["gardener", "tree cutting", "terrace garden", "lawn mowing"]
+    },
+    "services": [
+      {"title": "Gardening", "description": "Pruning, weeding, and fertilizing plants."},
+      {"title": "Lawn Mowing", "description": "Cutting grass to maintain an even, healthy lawn."},
+      {"title": "Tree Cutting", "description": "Safely pruning or removing dangerous tree branches."},
+      {"title": "Plant Care", "description": "Treating plant diseases and repotting overgrown plants."},
+      {"title": "Landscape Design", "description": "Planning and creating beautiful garden layouts."},
+      {"title": "Garden Cleaning", "description": "Removing dry leaves, debris, and dead plants."},
+      {"title": "Terrace Gardening", "description": "Setting up grow bags, soil, and drip systems on rooftops."},
+      {"title": "Irrigation Setup", "description": "Installing automatic sprinklers and drip irrigation lines."},
+      {"title": "Fence Installation", "description": "Putting up wire mesh or wooden fences for security."},
+      {"title": "Outdoor Lighting", "description": "Fixing garden lamps and fairy lights for ambiance."},
+      {"title": "Composting Setup", "description": "Creating organic waste composting pits or bins."},
+      {"title": "Pond Maintenance", "description": "Cleaning and maintaining outdoor fish ponds or fountains."},
+      {"title": "Vertical Gardening", "description": "Installing green walls on balconies or compound walls."},
+      {"title": "Hardscaping", "description": "Laying paver blocks or stepping stones in gardens."},
+      {"title": "Indoor Plant Styling", "description": "Selecting and placing plants to enhance interior decor."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Business & Office",
+      "slug": "business-office",
+      "description": "Legal, financial, and administrative support for businesses.",
+      "icon": "Briefcase",
+      "whyCustomersUse": "Startups and small businesses seeking compliance, tax, and HR services without hiring full-time consultants.",
+      "popularKeywords": ["gst filing", "chartered accountant", "company registration", "trademark"]
+    },
+    "services": [
+      {"title": "GST Filing", "description": "Monthly and annual GST return preparation and submission."},
+      {"title": "Tax Consultant", "description": "Income tax planning and filing for individuals and firms."},
+      {"title": "Chartered Accountant", "description": "Auditing, balance sheet preparation, and financial certification."},
+      {"title": "Company Registration", "description": "Incorporating Pvt Ltd, LLP, or Proprietorship firms."},
+      {"title": "Trademark Registration", "description": "Protecting brand names and logos legally."},
+      {"title": "Legal Advisor", "description": "Drafting contracts, NDAs, and resolving legal disputes."},
+      {"title": "HR Consultant", "description": "Recruitment and framing company policies."},
+      {"title": "Payroll Management", "description": "Processing employee salaries, PF, and ESI compliance."},
+      {"title": "Office Cleaning", "description": "Daily or deep cleaning of commercial workspaces."},
+      {"title": "Virtual Assistant", "description": "Remote administrative help for emails and scheduling."},
+      {"title": "FSSAI License", "description": "Obtaining food safety licenses for restaurants and cloud kitchens."},
+      {"title": "ISO Certification", "description": "Helping companies implement and get ISO quality standards."},
+      {"title": "Patent Filing", "description": "Registering intellectual property and inventions."},
+      {"title": "Import/Export Code", "description": "Getting the necessary IEC registration for global trade."},
+      {"title": "Business Plan Writing", "description": "Creating pitch decks and financial projections for investors."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Electronics & Appliances Repair",
+      "slug": "electronics-appliances-repair",
+      "description": "Fixing household electronics and major white goods.",
+      "icon": "Monitor",
+      "whyCustomersUse": "When expensive appliances break down, repairing is much cheaper than replacing.",
+      "popularKeywords": ["tv repair", "washing machine repair", "fridge repair", "laptop repair"]
+    },
+    "services": [
+      {"title": "TV Repair", "description": "Fixing display issues, motherboards, and sound on Smart TVs."},
+      {"title": "Washing Machine Repair", "description": "Resolving drum, motor, or drainage issues in washers."},
+      {"title": "Refrigerator Repair", "description": "Fixing cooling issues, gas leaks, and compressor faults."},
+      {"title": "Microwave Repair", "description": "Fixing heating elements and control panels in ovens."},
+      {"title": "Geyser Repair", "description": "Replacing thermostats and heating elements in water heaters."},
+      {"title": "Water Purifier Repair", "description": "Changing RO filters and fixing pump issues."},
+      {"title": "Laptop Repair", "description": "Fixing broken screens, keyboards, and motherboard issues."},
+      {"title": "Desktop PC Repair", "description": "Troubleshooting power supplies and upgrading hardware."},
+      {"title": "Mobile Phone Repair", "description": "Screen replacement and battery changes for smartphones."},
+      {"title": "Chimney Repair", "description": "Cleaning filters and fixing motors in kitchen chimneys."},
+      {"title": "Mixer Grinder Repair", "description": "Changing couplers, jars, and fixing burnt motors."},
+      {"title": "Air Cooler Repair", "description": "Fixing water pumps and fan motors in desert coolers."},
+      {"title": "Dishwasher Repair", "description": "Resolving water inlet and heating issues."},
+      {"title": "Printer Repair", "description": "Fixing paper jams and refilling ink/toner cartridges."},
+      {"title": "Home Theater Repair", "description": "Fixing amplifiers and blown speakers in audio systems."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Beauty & Grooming",
+      "slug": "beauty-grooming",
+      "description": "Salon services and personal grooming delivered at home.",
+      "icon": "Scissors",
+      "whyCustomersUse": "For the convenience of getting salon treatments in the comfort and privacy of their own home, avoiding travel and waiting times.",
+      "popularKeywords": ["salon at home", "haircut at home", "bridal makeup", "spa at home"]
+    },
+    "services": [
+      {"title": "Men's Haircut", "description": "Professional haircut and styling for men at home."},
+      {"title": "Women's Haircut", "description": "Trims, layers, and styling for women."},
+      {"title": "Beard Grooming", "description": "Trimming, shaping, and spa treatments for beards."},
+      {"title": "Facial & Cleanup", "description": "Skin treatments like de-tan, glowing facials, and blackhead removal."},
+      {"title": "Manicure", "description": "Nail trimming, shaping, and hand massage."},
+      {"title": "Pedicure", "description": "Foot scrub, nail care, and relaxing foot massage."},
+      {"title": "Waxing", "description": "Full body, arms, and legs waxing using hygienic products."},
+      {"title": "Threading", "description": "Eyebrow and upper lip shaping."},
+      {"title": "Hair Coloring", "description": "Root touch-ups, global coloring, and highlights."},
+      {"title": "Hair Spa", "description": "Deep conditioning and massage for healthy hair."},
+      {"title": "Bridal Makeup", "description": "Complete makeup, hair styling, and saree draping for the bride."},
+      {"title": "Party Makeup", "description": "Light makeup and styling for guests and attendees."},
+      {"title": "Body Spa & Massage", "description": "Relaxing Swedish or deep tissue massages at home."},
+      {"title": "Mehendi Application", "description": "Applying traditional henna designs on hands and feet."},
+      {"title": "Keratin Treatment", "description": "Smoothing and straightening treatments for frizzy hair."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Construction & Renovation",
+      "slug": "construction-renovation",
+      "description": "Building, remodeling, and civil work for homes and offices.",
+      "icon": "Hammer",
+      "whyCustomersUse": "When upgrading a house, fixing structural damage, or building new partitions and extensions.",
+      "popularKeywords": ["painting services", "waterproofing", "tiles laying", "civil contractor"]
+    },
+    "services": [
+      {"title": "House Painting", "description": "Interior and exterior painting with putty and primer."},
+      {"title": "Waterproofing", "description": "Sealing roof leaks and damp walls using specialized chemicals."},
+      {"title": "Tile Laying", "description": "Installing new floor or wall ceramic/vitrified tiles."},
+      {"title": "False Ceiling", "description": "Designing and installing POP or gypsum board ceilings."},
+      {"title": "Masonry Work", "description": "Building brick walls, plastering, and concrete repairs."},
+      {"title": "Fabrication Work", "description": "Welding and installing iron gates, grills, and sheds."},
+      {"title": "Modular Wardrobes", "description": "Custom designing and building wooden cupboards."},
+      {"title": "Flooring Polish", "description": "Grinding and polishing old mosaic or marble floors."},
+      {"title": "Plumbing Renovation", "description": "Completely replacing old concealed pipes in bathrooms."},
+      {"title": "Electrical Rewiring", "description": "Replacing old wiring and switchboards for safety."},
+      {"title": "Aluminium Partitioning", "description": "Creating office cabins or balcony enclosures."},
+      {"title": "Wallpaper Installation", "description": "Pasting decorative wallpapers seamlessly on walls."},
+      {"title": "Civil Contractor", "description": "Turnkey execution for room additions or major renovations."},
+      {"title": "Roof Sheet Installation", "description": "Fixing asbestos, metal, or polycarbonate roofing sheets."},
+      {"title": "Glass Work", "description": "Installing toughened glass for shower cubicles or railings."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Travel & Transport",
+      "slug": "travel-transport",
+      "description": "Cab bookings, tourism guides, and travel assistance.",
+      "icon": "Map",
+      "whyCustomersUse": "Planning vacations, attending outstation weddings, or needing reliable transport and local guidance.",
+      "popularKeywords": ["outstation cab", "tour guide", "tempo traveller", "airport taxi"]
+    },
+    "services": [
+      {"title": "Airport Taxi", "description": "Reliable pickup and drop-off to the nearest airport."},
+      {"title": "Outstation Cab", "description": "Booking a car for intercity travel or weekend getaways."},
+      {"title": "Tempo Traveller", "description": "Renting 12-14 seater vans for group or family trips."},
+      {"title": "Local City Tour", "description": "Booking a cab for a full-day sightseeing package."},
+      {"title": "Temple Tour Guide", "description": "Knowledgeable guides for historical and spiritual tours."},
+      {"title": "Visa Assistance", "description": "Help with documentation and processing for international visas."},
+      {"title": "Passport Agent", "description": "Assistance in applying for fresh or renewed passports."},
+      {"title": "Train Ticket Booking", "description": "Agents to help book difficult Tatkal or regular train tickets."},
+      {"title": "Bus Booking", "description": "Booking luxury sleeper or seater buses for travel."},
+      {"title": "Hotel Reservation", "description": "Finding and booking accommodations based on budget."},
+      {"title": "Pilgrimage Packages", "description": "Organized group tours to major religious destinations."},
+      {"title": "Trekking Guide", "description": "Experienced local guides for hill station treks."},
+      {"title": "Bicycle Tour Guide", "description": "Guided cycling tours exploring the city's heritage."},
+      {"title": "Foreign Exchange", "description": "Currency exchange services delivered to your location."},
+      {"title": "Luggage Porter", "description": "Assistance with carrying heavy bags at transit hubs."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Pet Care & Services",
+      "slug": "pet-care-services",
+      "description": "Grooming, training, and medical care for beloved pets.",
+      "icon": "Smile",
+      "whyCustomersUse": "Busy pet owners needing help to keep their dogs, cats, or fishes healthy, clean, and well-behaved.",
+      "popularKeywords": ["pet grooming", "vet on call", "dog trainer", "pet boarding"]
+    },
+    "services": [
+      {"title": "Pet Grooming", "description": "Bathing, hair trimming, and nail clipping for dogs and cats."},
+      {"title": "Vet on Call", "description": "Veterinarian home visits for vaccinations and checkups."},
+      {"title": "Dog Training", "description": "Obedience, potty training, and behavioral correction."},
+      {"title": "Pet Boarding", "description": "Safe facilities to keep pets while owners travel."},
+      {"title": "Aquarium Setup", "description": "Installing and aquascaping new fish tanks."},
+      {"title": "Aquarium Cleaning", "description": "Monthly water changes and filter cleaning for fish tanks."},
+      {"title": "Pet Sitting", "description": "Staying with the pet at the owner's home temporarily."},
+      {"title": "Dog Walking", "description": "Daily walks to ensure dogs get their required exercise."},
+      {"title": "Pet Taxi", "description": "Specialized cabs that allow transporting pets to the vet."},
+      {"title": "Bird Cage Maintenance", "description": "Cleaning enclosures and trimming nails for exotic birds."},
+      {"title": "Pet Photography", "description": "Professional photoshoots capturing pets' personalities."},
+      {"title": "Dog Bakery", "description": "Ordering custom, pet-safe birthday cakes and treats."},
+      {"title": "Pet Adoption Counsel", "description": "Guidance on choosing and preparing for a new pet."},
+      {"title": "Microchipping", "description": "Implanting identification chips for pet safety."},
+      {"title": "Pet Cremation", "description": "Respectful end-of-life services for departed pets."}
+    ]
+  },
+  {
+    "category": {
+      "name": "Tailoring & Fashion",
+      "slug": "tailoring-fashion",
+      "description": "Custom clothing stitching, alterations, and boutique services.",
+      "icon": "Scissors",
+      "whyCustomersUse": "For perfect fitting ethnic wear, school uniforms, or altering ready-made clothes that don't fit right.",
+      "popularKeywords": ["blouse stitching", "tailor near me", "saree draping", "clothing alteration"]
+    },
+    "services": [
+      {"title": "Blouse Stitching", "description": "Custom designing and stitching of saree blouses."},
+      {"title": "Salwar Suit Stitching", "description": "Tailoring churidars, kurtis, and ethnic suits."},
+      {"title": "Men's Tailoring", "description": "Stitching formal shirts, trousers, and custom suits."},
+      {"title": "Uniform Stitching", "description": "Bulk or single orders for school and corporate uniforms."},
+      {"title": "Clothing Alteration", "description": "Resizing, hemming, and fixing zippers on readymade clothes."},
+      {"title": "Saree Draping", "description": "Professional styling and draping of sarees for events."},
+      {"title": "Boutique Designer", "description": "Consulting for custom bridal or party wear designs."},
+      {"title": "Embroidery Work", "description": "Hand or machine embroidery (Aari work) on fabrics."},
+      {"title": "Dry Cleaning", "description": "Premium cleaning for silks, suits, and heavy lehengas."},
+      {"title": "Saree Polishing", "description": "Rolling and polishing old silk sarees to restore shine."},
+      {"title": "Darning & Patching", "description": "Invisible mending of small tears in expensive garments."},
+      {"title": "Shoe Repair & Polish", "description": "Fixing soles and deep cleaning leather shoes."},
+      {"title": "Bag Repair", "description": "Replacing zippers and straps on handbags and luggage."},
+      {"title": "Jewelry Polishing", "description": "Restoring shine to silver and artificial jewelry."},
+      {"title": "Personal Shopper", "description": "An expert to help you select clothes matching your style."}
+    ]
+  }
+]
